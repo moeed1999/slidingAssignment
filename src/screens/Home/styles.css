@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: -webkit-linear-gradient(-45deg,  rgba(255,174,39,1) 0%,rgba(222,73,110,1) 100%); 
+}
+
+.mainText {
+    color: white;
+    font-size: 3.333em;
+    text-align: center;
+    line-height: 58px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    animation-name: moveDownn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveDownn {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+
+    100% {
+        top: 40%;
+        opacity: 1;
+    }
+}
+
+.boldText {
+    font-weight: 900;
+}
+
+.contentContainer {
+    margin-top: 15%;
+}
+
+.displayNothing {
+    display: none;
+}
+
+.scrollDownHome {
+    position: absolute;
+    bottom:0;
+    animation-name: fadeIn;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

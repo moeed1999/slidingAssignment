@@ -1,0 +1,160 @@
+.servicesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: -webkit-linear-gradient(-45deg,  rgba(222,72,110,1) 0%,rgba(150,72,208,1) 100%);
+    padding: 0px 20%;
+}
+
+.servicesText {
+color:white;
+/*  */
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    animation-name: moveUp;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        bottom: -80%;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: -32%;
+        opacity: 1;
+    }
+}
+
+.servicesHeading {
+    font-size: 2.222em;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.servicesDescription {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    margin-top:200px;
+}
+  
+.cardItem {
+    margin:0px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transition1 {
+    opacity: 0;
+    animation: fade-in-left 4s forwards;
+}
+
+@keyframes fade-in-left {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .transition2 {
+    opacity: 0;
+    animation: fade-in-left2 5s forwards;
+}
+
+@keyframes fade-in-left2 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .transition3 {
+    opacity: 0;
+    animation: fade-in-left3 6s forwards;
+}
+
+@keyframes fade-in-left3 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .transition4 {
+    opacity: 0;
+    animation: fade-in-left4 7s forwards;
+}
+
+@keyframes fade-in-left4 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .cardHeading {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.89em;
+    padding: 13px 0 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .cardSubHeading {
+    font-size: 0.722em;
+    color: rgba(0, 0, 0, 0.5);
+    font-style: italic;
+  }
+
+  .footerButton {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    border: 1px solid #fff;
+    padding: 14px 30px;
+    font-size: 0.8em;
+    min-width: 200px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 25px;
+    letter-spacing: 3px;
+    position: absolute;
+    top:190%;
+    cursor: pointer;
+    animation-name: fadeIn;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }

@@ -1,0 +1,109 @@
+.teamContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #875ACB, #5A7BCB);
+    padding: 0px 20%;
+}
+
+.teamContentContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.teamHeading {
+    position: absolute;
+    top:250%;
+    font-size: 8.055em;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    margin-top: -90px;
+    z-index: 10;
+    width: 100%;
+    text-transform: uppercase;
+    left: 0px;
+
+    /*  */
+    height: 100px;
+    animation-name: moveDown;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveDown {
+    0% {
+        top: 270%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 250%;
+        opacity: 1;
+    }
+}
+
+.cameraImage {
+    position: absolute;
+    /* height: 100px; */
+    animation-name: moveCamera;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveCamera {
+    0% {
+        top: 300%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 225%;
+        opacity: 1;
+    }
+}
+
+.footerButtonTeam {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    border: 1px solid #fff;
+    padding: 14px 30px;
+    font-size: 0.8em;
+    min-width: 200px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 25px;
+    letter-spacing: 3px;
+    position: absolute;
+    top:290%;
+    cursor: pointer;
+    animation-name: fadeIn;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.cameraDetails {
+    position:absolute;
+    top:275%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* left: 0%; */
+    align-self: center;
+    cursor: pointer;
+}
+
+.teamDetailsText {
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: 0.3s all ease;
+}
