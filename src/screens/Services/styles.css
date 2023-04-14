@@ -4,13 +4,33 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: -webkit-linear-gradient(-45deg,  rgba(222,72,110,1) 0%,rgba(150,72,208,1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(150,72,208,1) 0%, rgba(222,72,110,1) 100%);
     padding: 0px 20%;
 }
 
+
+.FadedContainerService {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: -webkit-linear-gradient(45deg, rgba(255,174,39,1) 0%, rgba(222,73,110,1) 100%);
+    padding: 0px 20%;
+}
+
+.servicesContainerScrolledUp {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0px 20%;
+    background: -webkit-linear-gradient(45deg, #875ACB 0%, #5A7BCB) 100%;
+}
+
 .servicesText {
-color:white;
-/*  */
+    color:white;
     position: absolute;
     bottom: -100%;
     left: 50%;
@@ -97,7 +117,7 @@ color:white;
 
   .transition3 {
     opacity: 0;
-    animation: fade-in-left3 6s forwards;
+    animation: fade-in-left3 5s forwards;
 }
 
 @keyframes fade-in-left3 {

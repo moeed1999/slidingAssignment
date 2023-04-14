@@ -4,9 +4,11 @@ import './styles.css'
 const Services = ({currentPage}) => {
     const dummyProfiles = ['General Manager', 'Production Manager', 'Senior Front-end Developer', 'General Manager']
     return (
-      <div className='servicesContainer'>
-          <div className={!currentPage && 'displayNothing'}>
-              <div className={currentPage && `servicesText`}>
+      <div className={
+        currentPage === 1 ? 'servicesContainer' : currentPage === 0 ?'FadedContainerService' : 'servicesContainerScrolledUp'
+        }>
+          <div className={currentPage !== 1 && 'displayNothing'}>
+              <div className={currentPage === 1 && `servicesText`}>
               <div className='servicesHeading'>WHO <u>WE</u> ARE?</div>
               <div className='servicesDescription'>SYMODD creative Agency / we are a digital creative agency specialized in digital creation. Our main strength is in giving hands to brands express themselves in emotions and digital modern ways.
               <br/>
@@ -16,7 +18,7 @@ const Services = ({currentPage}) => {
               <div className={`card`}>
                     {dummyProfiles.map((elem,index)=>{
                         return(
-                            <div className={ currentPage && `cardItem transition${index+1}`}>
+                            <div className={ currentPage === 1 && `cardItem transition${index+1}`}>
                         <img 
                         src={require('../../assets/images/dummyImage.png')}
                         alt='profile'
@@ -29,7 +31,7 @@ const Services = ({currentPage}) => {
               </div>
           </div>
           <div 
-          className={currentPage ? `footerButton` : 'displayNothing'}
+          className={currentPage === 1 ? `footerButton` : 'displayNothing'}
           >What we do ?</div>
           
       </div>

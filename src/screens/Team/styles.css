@@ -4,7 +4,17 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to bottom right, #875ACB, #5A7BCB);
+    background: -webkit-linear-gradient(-45deg, #875ACB 0%, #5A7BCB) 100%;
+    padding: 0px 20%;
+}
+
+.fadedTeamContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: -webkit-linear-gradient(-135deg, rgba(150,72,208,1) 0%, rgba(222,72,110,1) 100%);
     padding: 0px 20%;
 }
 

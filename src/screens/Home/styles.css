@@ -4,7 +4,16 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: -webkit-linear-gradient(-45deg,  rgba(255,174,39,1) 0%,rgba(222,73,110,1) 100%); 
+    background: -webkit-linear-gradient(-45deg, rgba(255,174,39,1) 0%, rgba(222,73,110,1) 100%);
+}
+
+.fadedContainerHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: -webkit-linear-gradient(-135deg, rgba(150,72,208,1) 0%, rgba(222,72,110,1) 100%);
 }
 
 .mainText {
